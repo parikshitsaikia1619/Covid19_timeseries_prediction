@@ -13113,9 +13113,16 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Coivd19_US_prediction_final">Coivd19_US_prediction_final<a class="anchor-link" href="#Coivd19_US_prediction_final">&#182;</a></h1><h2 id="GROUP-D">GROUP D<a class="anchor-link" href="#GROUP-D">&#182;</a></h2><h3 id="Raju-Kumar-Singh------CSB17022">Raju Kumar Singh      CSB17022<a class="anchor-link" href="#Raju-Kumar-Singh------CSB17022">&#182;</a></h3><h3 id="Parikshit-Saikia----------CSB17035">Parikshit Saikia          CSB17035<a class="anchor-link" href="#Parikshit-Saikia----------CSB17035">&#182;</a></h3><h3 id="Rishabh-Trivedi----------CSB17063">Rishabh Trivedi          CSB17063<a class="anchor-link" href="#Rishabh-Trivedi----------CSB17063">&#182;</a></h3><h4 id="Model:-Recurrent-Neural-Network">Model: Recurrent Neural Network<a class="anchor-link" href="#Model:-Recurrent-Neural-Network">&#182;</a></h4>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[121]:</div>
+<div class="prompt input_prompt">In&nbsp;[213]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -14360,6 +14367,18 @@ Hidden state size:  torch.Size([2, 1, 10])
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Results.">Results.<a class="anchor-link" href="#Results.">&#182;</a></h3><p>So as we can see from the the plot , that the model is predictiing the case quite well,  and the model loss is also quite low.<br/>
+ Due to limited data we can see a flattening near the end of the predicted plot, resembles like china's covid curve. So, basically the trend is predicting that the cuve may become flat in near future ( Due to limited data).<br/>
+ We have used Recurrent neural network to make this model, because RNN has a unique property of taking the current input and also the seen previous input from the memory to calculate the output.<br/>
+Which makes it suitable for predicting timeseries data.<br/>
+We have purposefully loosely tuned the hyper parameters and model's architecture, So that the model doesn't overfit the data inspite of having limited data.<br/></p>
+
+</div>
+</div>
 </div>
     </div>
   </div>
